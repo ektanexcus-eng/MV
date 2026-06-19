@@ -196,6 +196,27 @@ p.body-text{font-size:0.93rem;color:var(--ink-mid);line-height:1.8;}
 .cta-card p{font-size:0.85rem;color:var(--ink-mid);line-height:1.8;margin-bottom:1.5rem;}
 .cta-card .btn{width:100%;justify-content:center;}
 
+/* ── ENTERPRISE & NATIONAL BENEFIT ── */
+.ent-wrap{display:grid;grid-template-columns:460px 1fr;gap:3.5rem;align-items:center;}
+@media (max-width:900px){.ent-wrap{grid-template-columns:1fr;}}
+.video-panel{background:var(--ink);border-radius:20px;padding:1rem;position:sticky;top:90px;box-shadow:0 20px 50px rgba(0,0,0,0.18);}
+.video-frame-wrap{position:relative;width:100%;padding-top:56.25%;border-radius:14px;overflow:hidden;background:#000;}
+.video-frame-wrap iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:0;}
+.video-meta{display:flex;align-items:center;justify-content:space-between;padding:0.9rem 0.4rem 0.3rem;}
+.video-meta-l{display:flex;align-items:center;gap:10px;}
+.video-live-dot{width:8px;height:8px;border-radius:50%;background:#FF3B30;animation:pulse 2s infinite;flex-shrink:0;}
+.video-meta-text{font-size:0.74rem;color:rgba(255,255,255,0.65);line-height:1.4;}
+.video-meta-text strong{color:#fff;font-weight:600;}
+.video-channel-btn{background:#fff;color:#000;font-size:0.74rem;font-weight:700;padding:7px 16px;border-radius:50px;text-decoration:none;white-space:nowrap;display:flex;align-items:center;gap:6px;transition:all 0.2s;}
+.video-channel-btn:hover{background:var(--saffron);color:#fff;}
+.ent-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem;margin-top:2rem;}
+.ent-card{background:#fff;border-radius:16px;padding:1.6rem 1.5rem;border:1px solid var(--border);border-left:4px solid var(--gold);}
+.ent-card .ci{font-size:1.7rem;margin-bottom:0.7rem;}
+.ent-card h4{font-size:0.95rem;font-weight:700;color:var(--ink);margin-bottom:0.5rem;line-height:1.4;}
+.ent-card p{font-size:0.8rem;color:var(--ink-mid);line-height:1.7;}
+.ent-badge-row{display:flex;flex-wrap:wrap;gap:0.6rem;margin:1.6rem 0;}
+.ent-badge{background:var(--navy-lt);color:var(--navy);border-radius:50px;padding:6px 16px;font-size:0.74rem;font-weight:600;}
+
 /* ── FOUNDER ── */
 .founder-wrap{display:grid;grid-template-columns:220px 1fr;gap:4rem;align-items:center;max-width:920px;margin:0 auto;}
 .founder-avatar{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,var(--saffron-lt),var(--green-lt));border:4px solid var(--saffron);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:4rem;font-weight:900;color:var(--saffron);margin:0 auto;}
@@ -271,6 +292,8 @@ footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:3rem 2rem;text
     <a href="#family" class="en">Family & Society</a>
     <a href="#family" class="mr">कुटुंब</a>
     <a href="#sdg" class="en">SDG Goals</a>
+    <a href="#enterprise" class="en">For Enterprises</a>
+    <a href="#enterprise" class="mr">कंपन्यांसाठी</a>
     <a href="#movement" class="en">Movement</a>
     <a href="#involve" class="en">Join Us</a>
     <a href="https://forms.gle/vKXTdJoZ2myxKkct5" class="btn btn-or nav-act en">🇮🇳 Support</a>
@@ -721,6 +744,116 @@ footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:3rem 2rem;text
         <div class="sdg-name en">Partnerships for the Goals</div><div class="sdg-name mr">उद्दिष्टांसाठी भागीदारी</div>
         <div class="sdg-note en">एकता Nexcus calls for NGOs, corporates, governments, and citizens to partner across India for one unified movement.</div>
         <div class="sdg-note mr">एकता Nexcus NGO, कंपन्या, सरकार आणि नागरिकांना एकत्र येण्याचे आवाहन करते.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════ ENTERPRISE & NATIONAL BENEFIT ════ -->
+<section class="sec" id="enterprise" style="background:#fff;">
+  <div class="inner">
+    <span class="tag tag-navy en">Enterprise Alignment · National Vision</span>
+    <span class="tag tag-navy mr" style="font-family:'Noto Sans Devanagari',sans-serif;">कंपनी सहभाग · राष्ट्रीय दृष्टी</span>
+    <h2 class="sec-h en">How Your Company Benefits — While <span style="color:var(--navy);">Building the Nation</span></h2>
+    <h2 class="sec-h mr" style="font-family:'Noto Sans Devanagari',sans-serif;">तुमची कंपनी कशी लाभते — आणि <span style="color:var(--navy);">राष्ट्र उभारणीत</span> सहभागी होते</h2>
+    <p class="lead en" style="margin-bottom:0.5rem;">एकता Nexcus is built as a Public-Private-People partnership. Enterprises that align early don't just contribute to a movement — they gain measurable wellbeing ROI, compliance-ready ESG documentation, and a permanent place in India's Vision 2047 story.</p>
+    <p class="lead mr" style="margin-bottom:0.5rem;font-family:'Noto Sans Devanagari',sans-serif;">एकता Nexcus ही सार्वजनिक-खासगी-लोक भागीदारी म्हणून तयार केली आहे. लवकर सहभागी होणाऱ्या कंपन्यांना केवळ चळवळीचा भाग नाही — तर मोजता येणारा कल्याण ROI आणि भारताच्या व्हिजन २०४७ कथेत स्थान मिळते.</p>
+
+    <div class="ent-wrap" style="margin-top:2.5rem;">
+
+      <!-- LEFT-CENTER: YOUTUBE VIDEO PANEL -->
+      <div class="video-panel">
+        <div class="video-frame-wrap">
+          <!--
+            VIDEO UPDATE INSTRUCTIONS:
+            Replace YOUTUBE_VIDEO_ID below with the new video's ID whenever the
+            featured video changes. Current source video: https://youtu.be/29qn6JfohXg
+            Channel: https://www.youtube.com/@aspmlcPune
+          -->
+          <iframe
+            id="enterpriseFeaturedVideo"
+            src="https://www.youtube.com/embed/29qn6JfohXg?rel=0"
+            title="एकता Nexcus · 6-Hour Workday Policy — Official Channel Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        <div class="video-meta">
+          <div class="video-meta-l">
+            <span class="video-live-dot"></span>
+            <span class="video-meta-text en"><strong>Featured Update</strong><br>Refreshed periodically by एकता Nexcus</span>
+            <span class="video-meta-text mr" style="font-family:'Noto Sans Devanagari',sans-serif;"><strong>ठळक अपडेट</strong><br>वेळोवेळी नवीन होणार</span>
+          </div>
+          <a href="https://www.youtube.com/@aspmlcPune" target="_blank" rel="noopener" class="video-channel-btn">▶ <span class="en">Channel</span><span class="mr">चॅनेल</span></a>
+        </div>
+      </div>
+
+      <!-- RIGHT: ENTERPRISE BENEFIT COPY -->
+      <div>
+        <h3 class="card-h en" style="font-size:1.2rem;margin-bottom:0.8rem;">Why Forward-Looking Companies Are Joining Now</h3>
+        <h3 class="card-h mr" style="font-size:1.2rem;margin-bottom:0.8rem;font-family:'Noto Sans Devanagari',sans-serif;">पुढाकार घेणाऱ्या कंपन्या आता का सामील होत आहेत</h3>
+        <p class="body-text en">A 6-hour, dignity-first workforce isn't a cost centre — it's a productivity, retention, and brand-trust strategy. Enterprises that adopt this standard early position themselves as Vision-2047-aligned employers of choice, ahead of regulation rather than reacting to it.</p>
+        <p class="body-text mr" style="margin-top:0.6rem;font-family:'Noto Sans Devanagari',sans-serif;">सन्मानपूर्ण ६-तास कामगार शक्ती हा खर्च केंद्र नाही — ही उत्पादकता, टिकवण आणि ब्रँड-विश्वासाची रणनीती आहे.</p>
+
+        <div class="ent-badge-row">
+          <span class="ent-badge en">Companies Act 2013 · Sch. VII</span>
+          <span class="ent-badge en">Social Security Code 2020</span>
+          <span class="ent-badge en">ESG / Social Impact Bond Ready</span>
+          <span class="ent-badge en">UN SDG 8 & 17 Aligned</span>
+        </div>
+
+        <div class="ent-grid">
+          <div class="ent-card">
+            <div class="ci">📈</div>
+            <h4 class="en">Productivity Dividend</h4>
+            <h4 class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">उत्पादकता लाभ</h4>
+            <p class="en">Rested workforces show fewer errors, lower attrition, and stronger output-per-hour — the same pattern seen in Sweden, Japan, and Microsoft Japan's 6-hour pilots.</p>
+            <p class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">विश्रांत कामगार शक्ती कमी चुका, कमी मनुष्यबळ गळती दाखवते.</p>
+          </div>
+          <div class="ent-card">
+            <div class="ci">🛡️</div>
+            <h4 class="en">Compliance-Ready ESG Reporting</h4>
+            <h4 class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">तयार ESG अहवाल</h4>
+            <p class="en">Documented alignment with Schedule VII CSR categories, the Social Security Code 2020, and UN SDG indicators — ready for investor and audit disclosure.</p>
+            <p class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">गुंतवणूकदार आणि ऑडिटसाठी तयार दस्तऐवजीकरण.</p>
+          </div>
+          <div class="ent-card">
+            <div class="ci">🏛️</div>
+            <h4 class="en">National Recognition</h4>
+            <h4 class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">राष्ट्रीय मान्यता</h4>
+            <p class="en">Early-adopting enterprises are publicly recognised as Vision India 2047 partners — visibility that strengthens institutional trust and brand equity.</p>
+            <p class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">व्हिजन भारत २०४७ भागीदार म्हणून सार्वजनिक मान्यता.</p>
+          </div>
+          <div class="ent-card">
+            <div class="ci">🤝</div>
+            <h4 class="en">PPP Governance Access</h4>
+            <h4 class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">PPP प्रशासन प्रवेश</h4>
+            <p class="en">Partners get a structured seat in एकता Nexcus's Public-Private-People governance model — shaping policy pilots instead of merely complying with them.</p>
+            <p class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">धोरण पथदर्शकांना आकार देण्याची संरचित संधी.</p>
+          </div>
+          <div class="ent-card">
+            <div class="ci">🧭</div>
+            <h4 class="en">Talent Attraction & Retention</h4>
+            <h4 class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">प्रतिभा आकर्षण</h4>
+            <p class="en">India's workforce increasingly chooses employers on wellbeing, not just salary. A 6-hour policy is a hiring advantage in a tightening talent market.</p>
+            <p class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">कल्याणावर आधारित नियुक्तीचा फायदा.</p>
+          </div>
+          <div class="ent-card">
+            <div class="ci">🌍</div>
+            <h4 class="en">Climate & Infrastructure Savings</h4>
+            <h4 class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">हवामान बचत</h4>
+            <p class="en">Staggered 6-hour shifts reduce peak-hour energy load, commuting emissions, and office overheads — aligned with Paris Agreement commitments.</p>
+            <p class="mr" style="font-family:'Noto Sans Devanagari',sans-serif;">कमी ऊर्जा भार, कमी कार्बन उत्सर्जन.</p>
+          </div>
+        </div>
+
+        <div class="cta-row" style="justify-content:flex-start;margin-top:2rem;">
+          <a href="https://forms.gle/2p7oDryZKoShRxdY6" class="btn btn-nv"><span class="en">Become a Partner Enterprise</span><span class="mr">भागीदार कंपनी बना</span></a>
+          <a href="#involve" class="btn btn-ol"><span class="en">View All Partnership Tracks</span><span class="mr">सर्व भागीदारी पाहा</span></a>
+        </div>
       </div>
     </div>
   </div>
