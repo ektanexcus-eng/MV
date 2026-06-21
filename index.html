@@ -92,6 +92,22 @@ p.body-text{font-size:0.93rem;color:var(--ink-mid);line-height:1.8;}
 .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;}
 .grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1.2rem;}
 
+/* ── INDEPENDENCE→REPUBLIC MOVEMENT BANNER ── */
+.indep-banner{position:fixed;top:67px;left:0;right:0;z-index:1998;background:linear-gradient(90deg,#FF6B00,#FFFFFF 50%,#138808);padding:0;overflow:hidden;border-bottom:1px solid var(--border-md);box-shadow:0 2px 8px rgba(0,0,0,0.06);}
+.indep-banner-inner{background:rgba(255,255,255,0.93);display:flex;align-items:center;justify-content:center;gap:10px;padding:7px 1.5rem;flex-wrap:wrap;text-align:center;}
+.indep-banner .ic{font-size:0.95rem;line-height:1;}
+.indep-banner .txt{font-size:0.78rem;font-weight:600;color:var(--navy);letter-spacing:0.01em;}
+.indep-banner .txt strong{color:var(--saffron-dk);}
+.indep-banner .txt .gn{color:var(--green);font-weight:700;}
+.indep-banner .mr{font-family:'Noto Sans Devanagari',sans-serif;}
+body{padding-top:0;}
+#hero{padding-top:150px;}
+@media(max-width:768px){
+  .indep-banner-inner{padding:8px 1rem;}
+  .indep-banner .txt{font-size:0.7rem;}
+  #hero{padding-top:175px;}
+}
+
 /* ── HERO ── */
 #hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:110px 2rem 5rem;position:relative;background:var(--cream);}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--saffron-lt);border:1px solid rgba(232,101,10,0.2);color:var(--saffron-dk);padding:8px 22px;border-radius:50px;font-size:0.78rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:2rem;}
@@ -277,11 +293,11 @@ footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:3rem 2rem;text
 
 <!-- ════ NAV ════ -->
 <nav>
-  <a href="#" class="nav-brand">
+  <a href="https://ektanexcus-eng.github.io/About" class="nav-brand">
     <span class="chakra">☸</span>
     <span>
       <span class="name">Ekta NexCus</span>
-      <span class="sub">ThinkTank India · 2027–2047</span>
+      <span class="sub">Think tank India 2047</span>
     </span>
   </a>
   <div class="nav-links">
@@ -303,6 +319,15 @@ footer{background:var(--ink);color:rgba(255,255,255,0.55);padding:3rem 2rem;text
     <button class="lbtn" id="bmr" onclick="setL('mr')">मराठी</button>
   </div>
 </nav>
+
+<!-- ════ INDEPENDENCE → REPUBLIC MOVEMENT BANNER ════ -->
+<div class="indep-banner">
+  <div class="indep-banner-inner">
+    <span class="ic">🇮🇳</span>
+    <span class="txt en"><strong>15 August 2026</strong> – <span class="gn">26 January 2027</span> · Movement of Independence India to Republic of India</span>
+    <span class="txt mr"><strong>१५ ऑगस्ट २०२६</strong> – <span class="gn">२६ जानेवारी २०२७</span> · स्वातंत्र्य भारत ते प्रजासत्ताक भारत चळवळ</span>
+  </div>
+</div>
 
 <!-- ════ HERO ════ -->
 <section id="hero">
